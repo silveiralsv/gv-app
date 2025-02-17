@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="relative h-20 md:h-52  mx-auto top-5 aspect-[2351/977]">
         <Image className="z-50" src="/footer-logo.png" alt="logo" fill />
       </div>
-      <div className="z-50 relative w-full flex items-center justify-center text-xs">
+      <div className="z-40 relative w-full flex items-center justify-center text-xs">
         <FooterItem>
           <MdMailOutline />
           contato@gheorghiuvieira.com
