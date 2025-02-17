@@ -62,11 +62,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-gray-100 gap-5 grid grid-cols-1 md:grid-cols-5">
+      <section className="w-full bg-gray-300/80 gap-5 grid grid-cols-1 md:grid-cols-5">
         <div className="relative  aspect-video md:aspect-auto  bg-green-300 md:col-span-3">
           <Image src="/team.png" fill alt="Team" className="object-cover" />
         </div>
-        <div className="flex flex-col justify-center gap-2 p-5 text-center md:col-span-2">
+        <div className="flex flex-col justify-center gap-2 px-5 py-10 md:py-24 text-center md:col-span-2">
           <h1 className="text-3xl">
             Advogados experientes, especialistas nas áreas Cível e Penal
           </h1>
