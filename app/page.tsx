@@ -73,7 +73,7 @@ export default function Home() {
             <h1 className="text-3xl">
               Advogados experientes, especialistas nas áreas Cível e Penal
             </h1>
-            <p className="text-slate-700/80">
+            <p className="text-black/80">
               Nosso escritório oferece atendimento especializado nas áreas de
               <b>Direito Civil</b> e <b>Penal</b>, atuando com excelência na
               defesa dos interesses de nossos clientes. No <b>Direito Civil</b>,
@@ -82,16 +82,16 @@ export default function Home() {
               oferecemos defesa técnica estratégica em processos criminais,
               incluindo crimes patrimoniais e do Tribunal do Júri.
             </p>
-            <p className="text-slate-700/80">
+            <p className="text-black/80">
               Contamos com uma equipe altamente qualificada, preparada para
               atuar em casos de grande complexidade, sempre com ética,
               compromisso e total dedicação.
             </p>
 
-            <h2 className="text-slate-700/80">Especialistas da equipe:</h2>
+            <h2 className="text-black/80">Especialistas da equipe:</h2>
 
-            <li className="text-slate-900/90">Dra. Giovanna Gheorghiu</li>
-            <li className="text-slate-900/90">Dra. Gabriela Vieira</li>
+            <li className="text-black/80">Dra. Giovanna Gheorghiu</li>
+            <li className="text-black/80">Dra. Gabriela Vieira</li>
           </div>
         </section>
 
