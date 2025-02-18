@@ -9,7 +9,7 @@ export default function WhatsappButton() {
 
   return (
     <Button
-      className="w-16 h-16 fixed bottom-5 right-5 z-50 flex items-center justify-center bg-white/80 gap-0 hover:bg-white"
+      className="w-16 h-16 fixed bottom-5 right-5 z-50 flex items-center justify-center bg-white/80 gap-0 hover:bg-white rounded-full p-2"
       size="icon"
       onClick={handleOnclick}
     >
