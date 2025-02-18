@@ -69,13 +69,13 @@ export default function Home() {
           <div className="relative aspect-video md:aspect-auto md:col-span-3">
             <Image src="/team.png" fill alt="Team" className="object-cover" />
           </div>
-          <div className="flex flex-col justify-center gap-2 px-5 py-10 md:py-24 text-center md:col-span-2">
-            <h1 className="text-3xl">
+          <div className="flex flex-col justify-center gap-2 px-5 py-10 md:py-24 text-center md:text-wrap md:col-span-2">
+            <h1 className="text-3xl mb-4">
               Advogados experientes, especialistas nas áreas Cível e Penal
             </h1>
             <p className="text-black/80">
               Nosso escritório oferece atendimento especializado nas áreas de
-              <b>Direito Civil</b> e <b>Penal</b>, atuando com excelência na
+              <b> Direito Civil</b> e <b>Penal</b>, atuando com excelência na
               defesa dos interesses de nossos clientes. No <b>Direito Civil</b>,
               garantimos suporte jurídico para contratos, indenizações, disputas
               patrimoniais e direito de família. Já no <b>Direito Penal</b>,
@@ -88,10 +88,8 @@ export default function Home() {
               compromisso e total dedicação.
             </p>
 
-            <h2 className="text-black/80">Especialistas da equipe:</h2>
-
-            <li className="text-black/80">Dra. Giovanna Gheorghiu</li>
-            <li className="text-black/80">Dra. Gabriela Vieira</li>
+            <li className="text-lg text-black/90">Dra. Giovanna Gheorghiu</li>
+            <li className="text-lg text-black/90">Dra. Gabriela Vieira</li>
           </div>
         </section>
 
