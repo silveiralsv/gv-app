@@ -10,7 +10,6 @@ export default function Footer() {
         fill
         className="object-cover object-top z-40"
       />
-
       <div className="relative h-20 md:h-36  mx-auto top-5 aspect-[2351/977]">
         <Image className="z-50" src="/footer-logo.png" alt="logo" fill />
       </div>
