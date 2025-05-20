@@ -7,6 +7,7 @@ export default async function Posts() {
 
   return (
     <div>
+      <div>this was generated {now}</div>
       {posts.map((post) => {
         return (
           <div key={post.id} className="flex flex-col gap-2">
