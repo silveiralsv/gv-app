@@ -45,7 +45,7 @@ export default function Home() {
       <main className="w-full h-full bg-secondary">
         <WhatsappButton />
         <motion.section
-          className="relative w-full h-screen flex items-center justify-center "
+          className="relative w-full h-[100dvh] flex items-center justify-center "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6 }}
