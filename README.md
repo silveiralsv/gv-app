@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Admin Access
+
+The `/admin` route is protected by a simple password based authentication. Set the `ADMIN_PASSWORD` variable in a `.env` file based on `.env.example`.
+
+When accessing `/admin` without a valid cookie you will be redirected to `/admin/login` where you can enter the password defined in `ADMIN_PASSWORD`.
