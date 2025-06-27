@@ -5,38 +5,54 @@ import Footer from "@/components/footer";
 import WhatsappButton from "@/components/whatsapp-button";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Modal from "@/components/ui/modal";
+import { useState } from "react";
 
 export default function Home() {
+  const [selectedCard, setSelectedCard] = useState<number | null>(null);
+
   const cardContents = [
     {
       title: "Contratos e Obrigações",
       description:
         "Garantimos segurança jurídica na elaboração, revisão e negociação de contratos, protegendo seus interesses em qualquer tipo de relação contratual.",
+      detail:
+        "Analisamos minuciosamente cada cláusula e orientamos sobre todas as obrigações envolvidas, evitando futuros litígios e assegurando tranquilidade nas suas relações comerciais.",
     },
     {
       title: "Direitos do Consumidor",
       description:
         "Atuamos na defesa dos consumidores contra abusos, cobranças indevidas e cláusulas abusivas, garantindo seus direitos em compras e serviços.",
+      detail:
+        "Prestamos atendimento completo em reclamações administrativas e judiciais, buscando indenizações justas e a reparação de prejuízos sofridos nas relações de consumo.",
     },
     {
       title: "Família e Sucessões",
       description:
         "Auxiliamos em divórcios, guarda de filhos, pensão alimentícia e partilha de bens, sempre com um olhar humano e estratégico para sua família.",
+      detail:
+        "Oferecemos apoio jurídico sensível e eficiente em todas as questões familiares, incluindo inventários e planejamento sucessório para proteção do seu patrimônio.",
     },
     {
       title: "Defesa Criminal Estratégica",
       description:
         "Prestamos defesa técnica em processos criminais, assegurando seus direitos em todas as fases da investigação e julgamento.",
+      detail:
+        "Elaboramos estratégias personalizadas para cada caso, atuando de forma incisiva em audiências e recursos para garantir a melhor solução possível.",
     },
     {
       title: "Crimes Contra o Patrimônio",
       description:
         "Atuamos em casos de furto, roubo, estelionato e outros crimes patrimoniais, buscando soluções jurídicas eficientes para cada situação.",
+      detail:
+        "Nossa equipe analisa detidamente as provas e desenvolve defesas sólidas, priorizando a proteção dos direitos e interesses dos nossos clientes.",
     },
     {
       title: "Consultoria Preventiva",
       description:
         "Oferecemos assessoria jurídica para empresas e indivíduos, prevenindo riscos legais e garantindo conformidade com a legislação penal.",
+      detail:
+        "Acompanhamos a rotina de sua atividade para identificar e corrigir eventuais falhas, minimizando conflitos e evitando demandas judiciais.",
     },
   ];
 
@@ -75,9 +91,20 @@ export default function Home() {
                 key={index}
                 title={content.title}
                 description={content.description}
+                onClick={() => setSelectedCard(index)}
               />
             ))}
           </div>
+          <Modal open={selectedCard !== null} onClose={() => setSelectedCard(null)}>
+            {selectedCard !== null && (
+              <>
+                <h2 className="text-xl font-bold mb-2">
+                  {cardContents[selectedCard].title}
+                </h2>
+                <p>{cardContents[selectedCard].detail}</p>
+              </>
+            )}
+          </Modal>
         </motion.section>
 
         <motion.section
