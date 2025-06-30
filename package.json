@@ -23,7 +23,8 @@
     "framer-motion": "^12.19.2",
     "sonner": "^1.7.4",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "googleapis": "^130.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
