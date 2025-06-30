@@ -34,3 +34,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Google Calendar Integration
+
+To enable meeting scheduling, configure the following environment variables:
+
+```
+GOOGLE_CLIENT_EMAIL=<service-account-email>
+GOOGLE_PRIVATE_KEY=<service-account-private-key>
+GOOGLE_CALENDAR_ID=<calendar-id>
+```
+
+The `GOOGLE_PRIVATE_KEY` value should keep line breaks escaped (`\n`).
+
+A new page is available at `/schedule` where visitors can pick a date and
+request a meeting. Available times are loaded from your Google Calendar.
